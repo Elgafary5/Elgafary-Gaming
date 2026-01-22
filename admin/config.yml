@@ -5,15 +5,25 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 
+site_url: https://elgafary-gaming.netlify.app
+logo_url: /images/EG_logo.png
+
 collections:
   - name: "posts"
-    label: "Posts"
-    format: "json"
-    file: "content/posts.json"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { label: "Link", name: "link", widget: "string" }
-      - { label: "Featured", name: "featured", widget: "boolean", default: false }
-      - { label: "Badge", name: "badge", widget: "string", required: false }
+    label: "📝 الشروحات"
+    files:
+      - name: "posts_json"
+        label: "Posts JSON"
+        file: "content/posts.json"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "الوصف", name: "description", widget: "text" }
+              - { label: "الصورة", name: "image", widget: "image" }
+              - { label: "الرابط", name: "link", widget: "string" }
+              - { label: "مميز", name: "featured", widget: "boolean", default: false }
+              - { label: "بادج", name: "badge", widget: "string", required: false }

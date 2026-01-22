@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Elgafary5/Elgafary-Gaming
   branch: main
 
 media_folder: "images"

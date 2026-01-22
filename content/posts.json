@@ -1,3 +1,13 @@
 {
-  "items": []
+  "posts": [
+    {
+      "id": "test",
+      "title": "بوست تجريبي",
+      "description": "ده بوست تجريبي للتأكد إن الموقع شغال",
+      "image": "images/filmora.jpg",
+      "link": "filmora15.html",
+      "featured": true,
+      "badge": "TEST"
+    }
+  ]
 }
